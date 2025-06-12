@@ -352,8 +352,8 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
         <div className="max-w-6xl mx-auto w-full px-4 md:px-8">
 
           {/* Judul */}
-         <motion.h2
-            className="text-3xl sm:text-4xl md:text-3xl font-bold text-white text-left lg:-ml-10"
+          <motion.h2
+            className="text-3xl sm:text-4xl md:text-4xl font-bold text-white text-left lg:-ml-10"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -422,7 +422,7 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
 
           {/* Heading */}
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-3xl font-bold text-white text-center"
+            className="text-3xl sm:text-4xl md:text-4xl font-bold text-white text-center"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -513,7 +513,7 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
         className="px-4 py-20 md:py-28 min-h-screen flex items-center scroll-mt-[50px]"
       >
         <div className="max-w-6xl mx-auto w-full">
-          <h2 className="text-3xl sm:text-4xl md:text-3xl font-bold text-white text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-white text-center">
             Featured <span className="text-[#8B5CF6]">Projects</span>
             <div className="mt-2 mx-auto w-20 h-1 bg-gradient-to-r from-[#8B5CF6] to-indigo-400 rounded-full"></div>
           </h2>
@@ -613,7 +613,7 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
       >
         <div className="max-w-6xl mx-auto w-full">
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-3xl font-bold text-white text-center"
+            className="text-3xl sm:text-4xl md:text-4xl font-bold text-white text-center"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -746,7 +746,7 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
       >
         <div className="max-w-4xl mx-auto w-full text-center">
           <motion.h2
-            className="text-3xl sm:text-2xl md:text-3xl font-bold text-white text-center"
+            className="text-3xl sm:text-2xl md:text-4xl font-bold text-white text-center"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
