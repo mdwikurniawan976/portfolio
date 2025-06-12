@@ -81,7 +81,7 @@ export default function ChatBot() {
       {isOpen && (
         <div className="w-80 max-w-[90vw] max-h-[90vh] bg-[#181824] text-white rounded-2xl shadow-2xl flex flex-col border border-[#292b3d] overflow-hidden">
           <div className="flex justify-between items-center bg-gradient-to-r from-purple-600 to-indigo-600 p-4 rounded-t-2xl">
-            <h4 className="font-semibold text-lg">Dwi AI Assistant</h4>
+            <h4 className="font-semibold text-lg">Dwi  Assistant</h4>
             <button onClick={toggleChat}>
               <FaTimes size={18} />
             </button>
@@ -107,24 +107,22 @@ export default function ChatBot() {
             <div ref={messagesEndRef} />
           </div>
 
-          <div
-          className="px-3 py-3 pr-[calc(0.75rem+env(safe-area-inset-right))] border-t border-[#292b3d] flex items-center space-x-2"
-          >
-            <input
-              className="flex-grow bg-[#2b2b3d] text-white py-2 px-3 rounded-xl focus:outline-none text-sm"
-              placeholder="Type your message..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-            />
-            <button
-              className="flex-shrink-0 bg-gradient-to-br from-purple-500 to-indigo-500 w-10 h-10 rounded-full flex items-center justify-center hover:scale-105 transition"
-              onClick={sendMessage}
-              style={{ marginRight: 'env(safe-area-inset-right, 4px)' }}
-            >
-              <FaPaperPlane size={16} />
-            </button>
-          </div>
+        <div className="px-3 py-3 border-t border-[#292b3d] flex items-center space-x-2">
+  <input
+    className="flex-grow bg-[#2b2b3d] text-white py-2 px-3 rounded-xl focus:outline-none text-sm w-0 min-w-0"
+    placeholder="Type your message..."
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+  />
+  <button
+    className="flex-shrink-0 bg-gradient-to-br from-purple-500 to-indigo-500 w-10 h-10 rounded-full flex items-center justify-center hover:scale-105 transition"
+    onClick={sendMessage}
+  >
+    <FaPaperPlane size={16} />
+  </button>
+</div>
+
         </div>
       )}
     </div>
