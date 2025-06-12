@@ -41,7 +41,7 @@ const Nav = ({ openNav }: Props) => {
     return (
         <div className={`fixed w-full z-[100] transition-all duration-300 ${navbg ? "bg-[#0F0F1A]/90 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
             <div className="flex items-center h-[12vh] justify-between w-[90%] xl:w-[80%] mx-auto">
-                <h1 className="text-xl md:text-3xl font-bold text-white">Dwi</h1>
+                <h1 className="text-3xl md:text-4xl font-bold text-white">Dwi</h1>
 
                 <div className="hidden lg:flex items-center space-x-5 mx-auto mr-30">
                     {navLinks.map((link) => (
