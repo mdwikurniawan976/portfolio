@@ -81,7 +81,7 @@ export default function ChatBot() {
       {isOpen && (
         <div className="w-80 max-w-[90vw] max-h-[90vh] bg-[#181824] text-white rounded-2xl shadow-2xl flex flex-col border border-[#292b3d] overflow-hidden">
           <div className="flex justify-between items-center bg-gradient-to-r from-purple-600 to-indigo-600 p-4 rounded-t-2xl">
-            <h4 className="font-semibold text-lg">Dwi  Assistant</h4>
+            <h4 className="font-semibold text-lg">Dwi AI Assistant</h4>
             <button onClick={toggleChat}>
               <FaTimes size={18} />
             </button>
