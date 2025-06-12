@@ -107,7 +107,12 @@ export default function ChatBot() {
             <div ref={messagesEndRef} />
           </div>
 
-          <div className="p-3 border-t border-[#292b3d] flex items-center space-x-2">
+          <div
+            className="p-3 border-t border-[#292b3d] flex items-center space-x-2"
+            style={{
+              paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 0.75rem)'
+            }}
+          >
             <input
               className="flex-grow bg-[#2b2b3d] text-white py-2 px-3 rounded-xl focus:outline-none text-sm"
               placeholder="Type your message..."
@@ -118,11 +123,11 @@ export default function ChatBot() {
             <button
               className="flex-shrink-0 bg-gradient-to-br from-purple-500 to-indigo-500 w-10 h-10 rounded-full flex items-center justify-center hover:scale-105 transition"
               onClick={sendMessage}
+              style={{ marginRight: 'env(safe-area-inset-right, 4px)' }}
             >
               <FaPaperPlane size={16} />
             </button>
           </div>
-
         </div>
       )}
     </div>
