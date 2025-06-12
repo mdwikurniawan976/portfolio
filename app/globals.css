@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+#bgcolor {
+  background-color: #0F0F1A;
+}
+
+#secondary {
+  background-color: #8B5CF6;
+}
+
+#third {
+  background-color: #E0E0FF;
+}
+
+#fourth {
+  background-color: #C084FC;
+}
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
