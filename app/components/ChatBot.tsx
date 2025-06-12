@@ -108,10 +108,7 @@ export default function ChatBot() {
           </div>
 
           <div
-            className="p-3 border-t border-[#292b3d] flex items-center space-x-2"
-            style={{
-              paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 0.75rem)'
-            }}
+          className="px-3 py-3 pr-[calc(0.75rem+env(safe-area-inset-right))] border-t border-[#292b3d] flex items-center space-x-2"
           >
             <input
               className="flex-grow bg-[#2b2b3d] text-white py-2 px-3 rounded-xl focus:outline-none text-sm"
