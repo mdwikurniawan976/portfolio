@@ -352,8 +352,8 @@ const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
         <div className="max-w-6xl mx-auto w-full px-4 md:px-8">
 
           {/* Judul */}
-          <motion.h2
-            className="text-2xl sm:text-4xl md:text-3xl font-bold text-white text-left lg:-ml-10"
+         <motion.h2
+            className="text-3xl sm:text-4xl md:text-3xl font-bold text-white text-left lg:-ml-10"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
